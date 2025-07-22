@@ -25,7 +25,6 @@
 
   <build>
     <plugins>
-      <!-- Compiler plugin -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -36,14 +35,12 @@
         </configuration>
       </plugin>
 
-      <!-- Surefire for tests -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.2.5</version>
       </plugin>
 
-      <!-- JAR packaging -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
@@ -54,11 +51,9 @@
 
   <distributionManagement>
     <repository>
-      <distributionManagement>
-  <repository>
-    <id>maven-releases</id> <!-- must match server id in settings.xml -->
-    <url>http://16.171.115.25:8081/repository/maven-releases/</url>
-  </repository>
-</distributionManagement>
+      <id>maven-releases</id> <!-- must match server id in settings.xml -->
+      <url>http://16.171.115.25:8081/repository/maven-releases/</url>
+    </repository>
+  </distributionManagement>
 
 </project>
