@@ -54,15 +54,11 @@
 
   <distributionManagement>
     <repository>
-      <id>maven-releases</id>
-      <name>My Release Repository</name>
-      <url>http://16.171.115.25:8081/repository/maven-releases/</url>
-    </repository>
-    <snapshotRepository>
-      <id>maven-snapshots</id>
-      <name>My Snapshot Repository</name>
-      <url>http://16.171.115.25:8081/repository/maven-snapshots/</url>
-    </snapshotRepository>
-  </distributionManagement>
+      <distributionManagement>
+  <repository>
+    <id>maven-releases</id> <!-- must match server id in settings.xml -->
+    <url>http://16.171.115.25:8081/repository/maven-releases/</url>
+  </repository>
+</distributionManagement>
 
 </project>
